@@ -1,0 +1,100 @@
+#newAlbum {
+    width:100%;
+    text-align:center;
+    color:white;
+    font-size:30px;
+    text-shadow:5px 5px 5px black;
+    float:left;
+}
+hr {
+    width:50%;
+    border-color:rgb(139,0,0);
+}
+#form {
+    width:100%;
+    height:400px;
+    margin-top:4%;
+}
+#artist {
+    width:20%;
+    height:30px;
+}
+#album {
+    width:20%;
+    height:30px;
+}
+#Erscheinungsjahr {
+    width:10%;
+    height:30px;
+}
+#genre {
+    width:10%;
+    height:35px;
+}
+#medium{
+    width:10%;
+    height:35px;
+}
+.button {
+    color:white;
+
+    background-color:black;
+    border:solid darkred 1px;
+    font-weight:bold;
+    padding-left:0.3%;
+    height:40px;
+    width:18%;
+    margin-top:3%;
+    margin-left:10%;
+}
+#inputButton {
+    margin-left:23%;
+    margin-top:1%;
+}
+.button:hover {
+    font-style:italic;
+    cursor:pointer;
+    background-color:darkred;
+    color:white;
+}
+.button:active {
+    border:none;
+    transform: translateY(1px);
+}
+.main {
+    width:100%;
+}
+#divNewAlbum {
+    width:60%;
+    height:300px;
+    float:left;
+    margin-left:12%;
+    margin-top:8%;
+}
+.albenIndex {
+    width:250px;
+    height:250px;
+    border-radius: 100%;
+    float:left;
+    margin:0.5%;
+    display: block;
+    background-image: url("vinyl.jpeg");
+    background-size: 100%;
+    color:white;
+    font-weight:bold;
+    border:outset black 3px;
+    opacity: 90%;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 4px 4px 4px black;
+    font-size:19px;
+    padding-top:1%;
+    cursor: pointer;
+    margin-left:10%;
+}
+.preview {
+    width:250px;
+    height:250px;
+    border: solid black 1px;
+    float:left;
+    margin-left:25%;
+}

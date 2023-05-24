@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Smarty.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Plattensammlung.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="body">
+    <div id="header">
+        <div id="titel">
+            <span id="seitentitel">Mein kleiner Plattenladen</span>
+            <span id="log">Login</span>
+            <span id="reg">Registrieren</span>
+        </div>
+    </div>
+    <div id="login">
+        <p>Einloggen</p>
+        <hr>
+        <form action="login.php" method="post" id="formLogin">
+            <label>Benutzername</label>
+            <br>
+            <input type="text" name="user" id="user" class="login" placeholder="E-Mail">
+            <br>
+            <label>Passwort</label>
+            <br>
+            <input type="password" name="pass" id="pass" class="login" placeholder="Passwort">
+            <br>
+            <input type="submit" id="loginButton" value="Login">
+            <input type="button" id="regButton" value="Registrieren">
+        </form>
+    </div>
+    <div id="footer">
+        <div id="leftFooter">
+            <a href="Plattensammlung_index.html" id="startseiteFooter">Startseite</a>
+            <a href="Impressum.html" id="impressum">Impressum</a>
+        </div>
+        <div id="rightFooter">
+            <a href="Kontakt.html" id="contact">Kontakt</a>
+            <a href="Hilfe.html" id="help">Hilfe</a>
+        </div>
+    </div>
+    <div id="fillFooter">
+    </div>
+    <div id="Az">
+    </div>
+</div>
+</body>
+</html>

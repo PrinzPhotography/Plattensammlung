@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Smarty.css">
+    <link rel="stylesheet" type="text/css" href="Plattensammlung_eintrag.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Plattensammlung.js"></script>
+    <meta charset="UTF-8">
+    <title>Neuer Eintrag</title>
+</head>
+<body>
+<div id="body">
+    <div id="header">
+        <div id="titel">
+            <span id="seitentitel">Mein kleiner Plattenladen</span>
+            <span id="log">Login</span>
+            <span id="reg">Registrieren</span>
+        </div>
+    </div>
+    <div id="leftSidebar">
+        <a href="Plattensammlung_index.html" class="dropdown" id="index">Home</a>
+        <a href="Plattensammlung_sammlung.html" class="dropdown" id="sammlung">Sammlung</a>
+        <div class="dropdownInterpreten">
+            <button class="dropdown">Interpreten</button>
+            <div class="dropdown-content">
+                <a href="A-Z.html" class="content">A-Z</a>
+
+            </div>
+        </div>
+        <div class="dropdownInterpreten">
+            <div class="dropdown-content">
+                <p class="content" id="Rock">Rock</p>
+                <p class="content" id="Metal">Metal</p>
+                <p class="content" id="Pop">Pop</p>
+                <p class="content" id="Metalcore">Metalcore</p>
+                <p class="content" id="Punk">Punk</p>
+                <p class="content" id="Hiphop">HipHop</p>
+            </div>
+        </div>
+        <a href="Plattensammlung_eintrag.html" class="dropdown" id="eintrag">Neuer Eintrag</a>
+        <div id="filter">
+            <p class="filter">Filter</p>
+            <hr id="hrfilter">
+            <div id="filterSuche">
+                <div id="filterCheck">
+                    <input type="checkbox" name="genre[]" value="Rock" class="check" id="rock2">
+                    <label>Rock</label>
+                    <input type="checkbox" name="genre[]" value="Metal" class="check" id="metal2">
+                    <label>Metal</label>
+                    <input type="checkbox" name="genre[]" value="Pop" class="check" id="pop2">
+                    <label>Pop</label>
+                    <br>
+                    <input type="checkbox" name="genre[]" value="Metalcore" class="check" id="metalcore2">
+                    <label>Metalcore</label>
+                    <input type="checkbox" name="genre[]" value="Punk" class="check" id="punk2">
+                    <label>Punk</label>
+                    <input type="checkbox" name="genre[]" value="Hiphop" class="check" id="hiphop2">
+                    <label>Hiphop</label>
+                </div>
+                <input type="search" placeholder="Suche..." name="search" id="suche">
+                <div type="button" id="searchButton" class="material-icons">
+                    search
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="back">
+        <a href="A-Z.html"><b><<</b></a>
+    </div>
+    <div id="vor">
+        <a href="Impressum.html"><b>>></b></a>
+    </div>
+    <div id="divNewAlbum">
+        <div class="main">
+            <div id="newAlbum">
+                <p>Neues Album hinzufügen:</p>
+            </div>
+            <hr>
+                <div id="form">
+                    <form action="Platten_insert.php" method="post" id="forminsert">
+                    <input type="text" id="artist" name="Artist" placeholder="Künstler">
+                    <input type="text" id="album" name="Album" placeholder="Album">
+                    <input type="text" id="Erscheinungsjahr" name="Erscheinungsjahr" placeholder="Release">
+                    <select id="genre" name="genre">
+                        <option value="Rock">Rock</option>
+                        <option value="Metal">Metal</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Metalcore">Metalcore</option>
+                        <option value="Punk">Punk</option>
+                        <option value="HipHop">HipHop</option>
+                    </select>
+                    <select id="medium" name="Medium">
+                        <option value="Vinyl">Vinyl</option>
+                        <option value="CD">CD</option>
+                        <option value="Digital">Digital</option>
+                    </select>
+                    <input type="file" name="image" id="image">
+                    <div id="inputButton">
+                    <input class="button" id="insert" type="submit" value="Rein damit!">
+                    <a href="Plattensammlung_index.html"><input class="button" type="button" value="Zurück"></a>
+                    </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="leftFooter">
+            <a href="Plattensammlung_index.html" id="startseiteFooter">Startseite</a>
+            <a href="Impressum.html" id="impressum">Impressum</a>
+        </div>
+        <div id="rightFooter">
+            <a href="Kontakt.html" id="contact">Kontakt</a>
+            <a href="Hilfe.html" id="help">Hilfe</a>
+        </div>
+    </div>
+    <div id="fillFooter">
+    </div>
+    <div id="Az">
+    </div>
+</div>
+</body>
+</html>

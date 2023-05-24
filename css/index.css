@@ -1,0 +1,81 @@
+#footer {
+    margin-top:10%;
+    width:99.8%;
+}
+#leftFooter {
+    margin-left:35%;
+}
+#titel {
+    margin-left:16%;
+}
+#login {
+    width:30%;
+    height:500px;
+    margin-top:5%;
+    margin-left:37%;
+    float:left;
+}
+#formLogin {
+    font-size:20px;
+    margin-top:7%;
+    margin-left:32%;
+}
+.login {
+    height:40px;
+    width:200px;
+    margin-top:1%;
+}
+label {
+    font-weight:bold;
+}
+#login hr {
+    border-color:darkred;
+    margin-top:-2%;
+    width:40%;
+}
+#login p {
+    text-align:center;
+    color:white;
+    font-size:34px;
+    text-shadow:5px 5px 5px black;
+}
+#loginButton {
+    color:white;
+    border:none;
+    background-color:black;
+    font-weight:bold;
+    padding-left:0.3%;
+    height:40px;
+    width:18%;
+    margin-top:3%;
+}
+#loginButton:hover {
+    font-style:italic;
+    cursor:pointer;
+    background-color:darkred;
+    color:white;
+}
+#loginButton:active {
+    border:none;
+    transform: translateY(1px);
+}
+#regButton {
+    color:white;
+    border:none;
+    background-color:black;
+    font-weight:bold;
+    padding-left:0.3%;
+    height:40px;
+    width:34%;
+    margin-top:3%;
+}
+#regButton:hover {
+    font-style:italic;
+    cursor:pointer;
+    background-color:darkred;
+    color:white;
+}
+#regButton:active {
+    border:none;
+    transform: translateY(1px);
+}

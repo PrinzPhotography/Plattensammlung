@@ -1,0 +1,130 @@
+#azborder {
+    width:55%;
+    height:80px;
+    background-color:rgba(0,0,0, .6);
+    border: solid rgba(139,0,0, .7);
+    border-top:none;
+    float:left;
+    margin-left:16%;
+}
+#letters {
+    width:100%;
+    height:40px;
+    cursor: pointer;
+    margin-top:1.3%;
+    margin-left:1%;
+}
+.category {
+    float:left;
+    color:white;
+    font-size:34px;
+    margin:0.6%;
+    text-shadow: 4px 4px 5px black;
+    font-weight:bold;
+}
+#artistList {
+    width:50%;
+    height:450px;
+    overflow-y: scroll;
+    margin-left:31.5%;
+    margin-top:10.2%;
+    padding-top:2%;
+}
+.albenIndex {
+    width:210px;
+    height:210px;
+    border-radius: 100%;
+    float:left;
+    margin:0.5%;
+    display: block;
+    background-image: url("vinyl.jpeg");
+    background-size: 100%;
+    color:white;
+    font-weight:bold;
+    border:outset black 3px;
+    opacity: 80%;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 4px 4px 4px black;
+    font-size:18px;
+    cursor: pointer;
+}
+.albenIndex:hover {
+    opacity: 100%;
+}
+.albenIndex:active {
+    transform: translateY(2px) translateX(2px);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#chooseArtist {
+    width:30%;
+    height:50px;
+    font-size:32px;
+    text-shadow:5px 5px 5px black;
+    color:white;
+    text-align:center;
+    margin-top:3%;
+    margin-left:28%;
+    float:left;
+}
+hr {
+    border-color:rgb(139,0,0);
+    width:50%;
+}
+#overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+}
+#popup {
+    max-width: 600px;
+    width: 80%;
+    max-height: 300px;
+    height: 80%;
+    padding: 20px;
+    position: relative;
+    background: #fff;
+    margin: 20px auto;
+    background-image: url("paper.jpg");
+    text-align:center;
+}
+.pop {
+    width:140px;
+    height:40px;
+    border:solid black 1px;
+}
+#buttonPop {
+    text-align:center;
+    margin-top:2%;
+}
+.button3c {
+    border:none;
+    background-color:black;
+    font-weight:bold;
+    padding-left:0.3%;
+    color:white;
+    height:30px;
+    width:120px;
+    margin-top:2%;
+}
+.button3c:hover {
+    box-shadow:1px 1px 5px 1px grey;
+    font-style:italic;
+    cursor:pointer;
+    background-color:darkred;
+}
+.button3c:active {
+    border:none;
+    transform: translateY(1px);
+}
+#canceltext {
+    margin-top:10%;
+    font-size:19px;
+}

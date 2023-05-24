@@ -1,0 +1,58 @@
+#contactForm {
+    margin-left:33%;
+    margin-top:3%;
+    width:25%;
+    height:auto;
+    float:left;
+}
+#nachname {
+    height:30px;
+    margin-top:-5%;
+}
+#vorname {
+    height:30px;
+    margin-top:-3%;
+}
+#email {
+    height:30px;
+    margin-top:-3%;
+}
+#contactText {
+    margin-top:-3%;
+}
+#contactTitle {
+    float:left;
+    width:30%;
+    height:50px;
+    font-size:32px;
+    text-shadow:5px 5px 5px black;
+    color:white;
+    text-align:center;
+    margin-top:3%;
+    margin-left:28%;
+}
+hr {
+    border-color:rgb(139,0,0);
+    width:50%;
+}
+
+#send {
+    color:white;
+    border:none;
+    background-color:black;
+    font-weight:bold;
+    padding-left:0.3%;
+    height:40px;
+    width:18%;
+    margin-top:3%;
+}
+#send:hover {
+    font-style:italic;
+    cursor:pointer;
+    background-color:darkred;
+    color:white;
+}
+#send:active {
+    border:none;
+    transform: translateY(1px);
+}

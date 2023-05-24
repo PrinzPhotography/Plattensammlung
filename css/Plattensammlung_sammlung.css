@@ -1,0 +1,87 @@
+
+#ganzeSammlung {
+    width:70%;
+    height:620px;
+    margin-left:22%;
+    overflow-y: scroll;
+    padding-top:3%;
+}
+.albenIndex {
+    width:192px;
+    height:192px;
+    border-radius: 100%;
+    float:left;
+    margin:0.5%;
+    display: block;
+    background-image: url("vinyl.jpeg");
+    background-size: 100%;
+    color:white;
+    font-weight:bold;
+    border:outset black 3px;
+    opacity: 90%;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 4px 4px 4px black;
+    font-size:14px;
+    padding-top:1%;
+    cursor: pointer;
+}
+.albenIndexFilter {
+    width:192px;
+    height:192px;
+    border-radius: 100%;
+    float:left;
+    margin:0.5%;
+    display: block;
+    background-image: url("vinyl.jpeg");
+    background-size: 100%;
+    color:white;
+    font-weight:bold;
+    border:outset black 3px;
+    opacity: 90%;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 4px 4px 4px black;
+    font-size:14px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+#detail {
+    width:292px;
+    height:292px;
+    margin-left:18%;
+    float:right;
+    font-size:19px;
+}
+#detailDiv {
+    width:30%;
+    height:150px;
+    font-size:30px;
+    float:left;
+    margin-top:-9%;
+    margin-left:33%;
+}
+#detailTitle {
+    width:30%;
+    height:120px;
+    text-align:center;
+    color:white;
+    font-size:30px;
+    text-shadow:5px 5px 5px black;
+    margin-top:5%;
+    margin-left:30%;
+}
+#detailHr {
+    border-color:darkred;
+    margin-top:-3%;
+}
+#nextlast {
+    width:10%;
+    border:solid white;
+    float:left;
+}
+#nextlast b {
+    padding:15%;
+    font-size:20px;
+}

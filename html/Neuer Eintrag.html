@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meine Plattensammlung</title>
+    <style>
+        .divTitel {
+            background-color: black;
+            opacity: 70%;
+            margin-top:-2%;
+        }
+        .Titel {
+            font-size: 36px;
+            font-weight:bold;
+            color:white;
+            text-align:center;
+            text-shadow: 6px 6px 5px black;
+            border-bottom:solid white 3px;
+            opacity: 100%;
+            padding: 1%;
+        }
+        .leftSidebar {
+            width:10%;
+            height:auto;
+            float:left;
+            background-color: black;
+            margin-top:-2%;
+        }
+        .Menü {
+            width:91.5%;
+            height:10%;
+            border:outset white 8px;
+            float:left;
+            text-shadow: 6px 6px 5px black;
+        }
+        .Übersicht {
+            width:100%;
+            height:35px;
+            float:left;
+            text-align:center;
+            padding-top: 10%;
+        }
+        .Übersicht:hover {
+            background-color:darkred;
+            color: white;
+        }
+        .main {
+            width:89.5%;
+            height:auto;
+            float:right;
+            margin-top:-2%;
+        }
+        .dropbtn {
+            width:100%;
+            height:50px;
+            text-align:center;
+            float:left;
+            border: none;
+            cursor: pointer;
+            color:white;
+            font-size:17px;
+            font-weight:bold;
+            background-color:black;
+        }
+        .dropdown-content {
+            display: none;
+            background-color: black;
+            width:100%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            float:left;
+            border:solid darkred 1px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border:solid darkred 1px;
+        }
+        .dropdown-content a:hover {background-color:darkred}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: darkred;
+        }
+        .button {
+            cursor:pointer;
+            text-shadow:3px 3px 5px black;
+        }
+        .button:hover {
+            border:outset white 2px;
+        }
+        .button:active {
+            border: inset white 2px;
+            transition: 0s;
+            transform: scale(0.95);
+        }
+
+    </style>
+</head>
+<body style="background-image: url(jukebox.jpg); background-size: cover">
+<div class="divTitel" style="width:100%">
+    <p class="Titel">Meine Plattensammlung</p>
+</div>
+<div class="leftSidebar">
+    <div class="Menü">
+        <p style="color:white; text-align:center; font-size:20px; font-weight:bold">Menü</p>
+    </div>
+    <div class="Übersicht">
+        <a href="Plattensammlung.html" style="color:white; font-size:17px; font-weight:bold; text-decoration: none">Übersicht</a>></p>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Interpreten</button>
+        <div class="dropdown-content">
+            <a href="A-Z.html" style="color:white; font-size:17px; font-weight:bold; text-decoration: none">A-Z</a>
+            <a href="Neuer%20Eintrag.html" style="color:white; font-size:17px; font-weight:bold; text-decoration: none">Neuer Eintrag</a>
+        </div>
+    </div>
+    <div class="Übersicht">
+        <a href="Suche.html" style="color:white; font-size:17px; font-weight:bold; text-decoration: none">Suche</a>></p>
+    </div>
+    <div class="Übersicht">
+        <a href="Plattensammlung.html" style="color:white; font-size:17px; font-weight:bold; text-decoration: none">--TEST--</a>></p>
+    </div>
+    <div class="Übersicht">
+        <a href="Plattensammlung.html" style="color:white; font-size:17px; font-weight:bold; text-decoration: none">--TEST--</a>></p>
+    </div>
+    <div class="Übersicht">
+        <a href="Plattensammlung.html" style="color:white; font-size:17px; font-weight:bold; text-decoration: none">--TEST--</a>></p>
+    </div>
+    <div class="Übersicht">
+        <a href="Plattensammlung.html" style="color:white; font-size:17px; font-weight:bold; text-decoration: none">--TEST--</a>></p>
+    </div>
+    <div class="Übersicht">
+        <a href="Plattensammlung.html" style="color:white; font-size:17px; font-weight:bold; text-decoration: none">--TEST--</a>></p>
+    </div>
+</div>
+
+<div class="main">
+    <div style="width:40%; text-align:center; margin-left:16%; margin-top:15%">
+        <p style="color:white; font-size:30px; text-shadow:5px 5px 5px black">Neues Album hinzufügen:</p>
+    </div>
+    <hr style="width:30%; border-color:orangered; margin-right:49%; margin-top:-1%">
+    <form action="Platten.php" method="post">
+        <div style="margin-left:21%; margin-top:5%">
+            <input type="text" id="artist" name="Artist" placeholder="Künstler" style="width:12%">
+            <input type="text" id="album" name="Album" placeholder="Album" style="width:12%">
+            <input type="text" id="Erscheinungsjahr" name="Erscheinungsjahr" placeholder="Release" style="width:5%">
+            <select id="medium" name="Medium" style="width:5%">
+                <option value="Vinyl">Vinyl</option>
+                <option value="CD">CD</option>
+                <option value="Digital">Digital</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Rein damit!" style="margin-left:15%; margin-top:1%; background-color:darkred; color:white">
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
